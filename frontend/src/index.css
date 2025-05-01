@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.bg-netflix{
+    background-color: rgb(229, 9, 20);
+}
+
+.text-netflix{
+    color: rgb(229, 9, 20);
+}
+
+.hide-scrollbar{
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;         /* Chrome, Safari */
+  }

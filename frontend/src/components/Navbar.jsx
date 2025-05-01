@@ -50,7 +50,7 @@ const Navbar = () => {
         {
           user ? (<div className="flex items-center">
             <IoIosArrowDropdown onClick={()=>setOpenBox(true)} className="sm:hidden" size={"24px"} color="white" />
-            <h1 className="text-lg ml-1 font-medium text-white">{user.fullname}</h1>
+            <h1 className="text-lg ml-1 font-medium text-white">{user?.fullname}</h1>
             <div className="ml-4 hidden sm:flex">
               <button onClick={logout} className="bg-netflix mx-2 text-white p-2 rounded-[4px] cursor-pointer">
                 Logout
@@ -77,7 +77,7 @@ const Navbar = () => {
     {openBox && 
       <div className="sm:hidden w-1/2 z-10 absolute top-[10%] right-5 p-5 bg-white flex flex-col ">
           <div className="flex items-center justify-between">
-           <p className="text-lg font-bold"> {user.fullname.split(" ")[0]}</p>
+           <p className="text-lg font-bold"> {user?.fullname.split(" ")[0]}</p>
            <p onClick={()=>setOpenBox(false)} className="text-lg font-bold">x</p>
           </div>
           <p onClick={logout} className="mt-4 hover:underline text-lg font-semibold">Logout</p>

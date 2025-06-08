@@ -13,9 +13,9 @@ const Home = () => {
     <div>
        <Navbar/>
       <div className='relative'>
-        <img className='w-screen h-screen' src={cover_page} alt="cover" />
+        <img className='w-screen h-[100dvh] object-cover' src={cover_page} alt="cover" />
         <div className='absolute left-[50%] top-[50%] transform-[translate(-50%,-50%)] '>
-          <h1 className={`font-extrabold text-3xl md:text-6xl text-white ${user?"text-left":"text-left"} sm:text-left `} >Unlimited  movies, <br />TV shows, and more</h1>
+          <h1 className={`font-extrabold text-5xl md:text-6xl text-white ${user?"text-left":"text-left"} sm:text-left `} >Unlimited  movies, <br />TV shows, and more</h1>
           {
             user ? 
             (<>
